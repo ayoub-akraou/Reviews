@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --main-color: #47addc;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  background-color: rgba(235, 237, 242, 0.933);
+  padding: 4rem 3rem;
+}
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 6rem;
+}
+.title {
+  position: relative;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 36%;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+}
+.box {
+  background-color: #fff;
+  padding: 2.4rem 3.2rem;
+  min-height: 45.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 0 2rem rgb(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  font-size: 1.4rem;
+}
+.job {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.description {
+  text-align: center;
+  line-height: 1.6;
+  min-height: calc(2.55rem * 4);
+  font-size: 1.6rem;
+  color: #666;
+}
+.image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+}
+.image::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 6px;
+  background-color: var(--main-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.quote {
+  font-size: 2.6rem;
+  font-weight: bold;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  padding: 5px;
+  color: #fff;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+.arrow {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: rgba(73, 166, 233, 0.7);
+  cursor: pointer;
+}
+.arrow:hover {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+.btn {
+  background-color: initial;
+  color: var(--main-color);
+  font-size: 1.4rem;
+  font-family: inherit;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid var(--main-color);
+  padding: 5px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  transition: 0.3s;
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 52%;
+  }
+  .box {
+    padding: 1.5rem;
+  }
+}
