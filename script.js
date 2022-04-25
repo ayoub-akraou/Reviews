@@ -27,7 +27,7 @@ const user2 = {
 };
 const user3 = {
   image: "profil-3",
-  fullName: "Anna Johnson",
+  fullName: "Jhon Johnson",
   job: "WEB DESIGNER",
   description:
     "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
